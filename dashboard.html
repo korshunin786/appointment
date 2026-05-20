@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<div class="flex min-h-screen">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-black text-white p-6 hidden md:block">
+
+    <h1 class="text-3xl font-bold text-pink-500 mb-10">
+      SalonAI
+    </h1>
+
+    <ul class="space-y-6">
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="appointments.html">Appointments</a></li>
+      <li><a href="customers.html">Customers</a></li>
+      <li><a href="chat.html">Chat Panel</a></li>
+      <li><a href="services.html">Services</a></li>
+    </ul>
+
+  </aside>
+
+  <!-- Main -->
+  <main class="flex-1 p-8">
+
+    <h2 class="text-4xl font-bold mb-10">
+      Dashboard Overview
+    </h2>
+
+    <!-- Stats -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-gray-500 mb-2">Today's Bookings</h3>
+        <p class="text-4xl font-bold">18</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-gray-500 mb-2">Total Customers</h3>
+        <p class="text-4xl font-bold">240</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-gray-500 mb-2">Revenue</h3>
+        <p class="text-4xl font-bold">45K</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-gray-500 mb-2">Pending Chats</h3>
+        <p class="text-4xl font-bold">12</p>
+      </div>
+
+    </div>
+    <!-- Recent Appointments -->
+    <div class="bg-white rounded-2xl shadow-lg p-8">
+
+      <h3 class="text-2xl font-bold mb-6">
+        Recent Appointments
+      </h3>
+
+      <table class="w-full border-collapse">
+
+        <thead>
+          <tr class="border-b">
+            <th class="text-left py-4">Customer</th>
+            <th class="text-left py-4">Service</th>
+            <th class="text-left py-4">Time</th>
+            <th class="text-left py-4">Status</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr class="border-b">
+            <td class="py-4">Ahmed</td>
+            <td>Haircut + Beard</td>
+            <td>4:00 PM</td>
+            <td>
+              <span class="bg-green-100 text-green-700 px-4 py-1 rounded-full">
+                Confirmed
+              </span>
+            </td>
+          </tr>
+
+          <tr class="border-b">
+            <td class="py-4">Ali</td>
+            <td>Premium Styling</td>
+            <td>6:00 PM</td>
+            <td>
+              <span class="bg-yellow-100 text-yellow-700 px-4 py-1 rounded-full">
+                Pending
+              </span>
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Salon Appointment Manager</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      font-family: 'Poppins', sans-serif;
+      background: #0f172a;
+    }
+
+    .hero-bg{
+      background:
+      linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1600&auto=format&fit=crop');
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-hover:hover{
+      transform: translateY(-8px);
+      transition: 0.3s;
+    }
+
+  </style>
+
+</head>
+
+<body class="text-white">
+
+  <!-- Navbar -->
+  <nav class="bg-black/80 backdrop-blur-md fixed w-full z-50 shadow-lg">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <h1 class="text-3xl font-bold text-yellow-500">
+        SalonAI
+      </h1>
+
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+        <li><a href="#features" class="hover:text-yellow-500">Features</a></li>
+        <li><a href="#dashboard" class="hover:text-yellow-500">Dashboard</a></li>
+        <li><a href="#pricing" class="hover:text-yellow-500">Pricing</a></li>
+        <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+      </ul>
+
+      <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-5 py-2 rounded-lg font-semibold">
+        Get Started
+      </button>
+
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg min-h-screen flex items-center">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="max-w-3xl">
+
+        <h1 class="text-6xl font-bold leading-tight mb-6">
+          AI Appointment Manager For Modern Salons
+        </h1>
+
+        <p class="text-xl text-gray-300 mb-8 leading-8">
+          Automate customer conversations, manage bookings,
+          recommend services, and handle appointments across
+          WhatsApp, Instagram, Facebook, and Telegram.
+        </p>
+
+        <div class="flex flex-wrap gap-5">
+
+          <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-xl font-semibold">
+            Start Free Trial
+          </button>
+
+          <button class="border border-white hover:bg-white hover:text-black px-8 py-4 rounded-xl">
+            Watch Demo
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 bg-slate-950">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-5xl font-bold mb-5">
+          Smart AI Features
+        </h2>
+
+        <p class="text-gray-400 text-lg">
+          Everything your salon needs to automate bookings and grow sales
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Feature Card -->
+        <div class="card-hover bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
+
+          <div class="text-yellow-500 text-5xl mb-6">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+
+          <h3 class="text-2xl font-bold mb-4">
+            Smart Booking
+          </h3>
+
+          <p class="text-gray-400 leading-7">
+            AI automatically books appointments, checks availability,
+            and confirms reservations without human assistance.
+          </p>
+
+        </div>
+
+        <!-- Feature Card -->
+        <div class="card-hover bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
+
+          <div class="text-yellow-500 text-5xl mb-6">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+
+          <h3 class="text-2xl font-bold mb-4">
+            Multi-Platform Chat
+          </h3>
+
+          <p class="text-gray-400 leading-7">
+            Connect with customers on WhatsApp, Instagram,
+            Facebook Messenger, and Telegram.
+          </p>
+
+        </div>
+
+        <!-- Feature Card -->
+        <div class="card-hover bg-slate-900 p-8 rounded-3xl border border-slate-800 shadow-xl">
+
+          <div class="text-yellow-500 text-5xl mb-6">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+
+          <h3 class="text-2xl font-bold mb-4">
+            AI Recommendations
+          </h3>
+
+          <p class="text-gray-400 leading-7">
+            Suggest combos, premium services, and personalized
+            grooming packages to increase revenue.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Chat Demo -->
+  <section class="py-24 bg-slate-900">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+
+        <!-- Left -->
+        <div>
+
+          <h2 class="text-5xl font-bold mb-6">
+            AI Chat Assistant
+          </h2>
+
+          <p class="text-gray-400 text-lg leading-8 mb-8">
+            Your salon AI assistant talks naturally with customers,
+            answers questions, and books appointments instantly.
+          </p>
+
+          <ul class="space-y-5 text-lg">
+
+            <li>
+              <i class="fa-solid fa-check text-yellow-500 mr-3"></i>
+              Automatic booking confirmation
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check text-yellow-500 mr-3"></i>
+              Appointment reminders
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check text-yellow-500 mr-3"></i>
+              Rescheduling & cancellation
+            </li>
+
+            <li>
+              <i class="fa-solid fa-check text-yellow-500 mr-3"></i>
+              Customer data collection
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- Right Chat UI -->
+        <div class="bg-black rounded-3xl p-8 shadow-2xl border border-slate-800">
+
+          <div class="space-y-5">
+
+            <div class="bg-slate-800 p-4 rounded-2xl w-fit max-w-sm">
+              Hi, I want a haircut tomorrow
+            </div>
+
+            <div class="bg-yellow-500 text-black p-4 rounded-2xl ml-auto w-fit max-w-sm">
+              Sure! Available slots are:
+              11 AM, 2 PM, 5 PM
+            </div>
+
+            <div class="bg-slate-800 p-4 rounded-2xl w-fit max-w-sm">
+              5 PM please
+            </div>
+
+            <div class="bg-yellow-500 text-black p-4 rounded-2xl ml-auto w-fit max-w-sm">
+              Appointment confirmed for tomorrow at 5 PM.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Dashboard Preview -->
+  <section id="dashboard" class="py-24 bg-slate-950">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-5xl font-bold mb-5">
+          Salon Dashboard
+        </h2>
+
+        <p class="text-gray-400 text-lg">
+          Manage appointments, customers, and analytics in one place
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <!-- Card -->
+        <div class="bg-slate-900 p-8 rounded-3xl text-center border border-slate-800">
+
+          <h3 class="text-5xl font-bold text-yellow-500 mb-4">
+            320+
+          </h3>
+
+          <p class="text-gray-400">
+            Monthly Appointments
+          </p>
+
+        </div>
+
+        <!-- Card -->
+        <div class="bg-slate-900 p-8 rounded-3xl text-center border border-slate-800">
+
+          <h3 class="text-5xl font-bold text-yellow-500 mb-4">
+            95%
+          </h3>
+
+          <p class="text-gray-400">
+            Customer Satisfaction
+          </p>
+
+        </div>
+
+        <!-- Card -->
+        <div class="bg-slate-900 p-8 rounded-3xl text-center border border-slate-800">
+
+          <h3 class="text-5xl font-bold text-yellow-500 mb-4">
+            24/7
+          </h3>
+
+          <p class="text-gray-400">
+            AI Support Availability
+          </p>
+
+        </div>
+
+        <!-- Card -->
+        <div class="bg-slate-900 p-8 rounded-3xl text-center border border-slate-800">
+
+          <h3 class="text-5xl font-bold text-yellow-500 mb-4">
+            4x
+          </h3>
+
+          <p class="text-gray-400">
+            Faster Booking Process
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-24 bg-slate-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-5xl font-bold mb-5">
+          Pricing Plans
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Plan -->
+        <div class="bg-black p-10 rounded-3xl border border-slate-800">
+
+          <h3 class="text-3xl font-bold mb-4">
+            Starter
+          </h3>
+
+          <p class="text-gray-400 mb-6">
+            Small salons
+          </p>
+
+          <h4 class="text-5xl font-bold text-yellow-500 mb-8">
+            $29
+          </h4>
+
+          <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-black py-3 rounded-xl font-semibold">
+            Choose Plan
+          </button>
+
+        </div>
+
+        <!-- Plan -->
+        <div class="bg-yellow-500 text-black p-10 rounded-3xl shadow-2xl scale-105">
+
+          <h3 class="text-3xl font-bold mb-4">
+            Professional
+          </h3>
+
+          <p class="mb-6">
+            Growing salons
+          </p>
+
+          <h4 class="text-5xl font-bold mb-8">
+            $79
+          </h4>
+
+          <button class="w-full bg-black text-white py-3 rounded-xl font-semibold">
+            Choose Plan
+          </button>
+
+        </div>
+
+        <!-- Plan -->
+        <div class="bg-black p-10 rounded-3xl border border-slate-800">
+
+          <h3 class="text-3xl font-bold mb-4">
+            Enterprise
+          </h3>
+
+          <p class="text-gray-400 mb-6">
+            Large salon chains
+          </p>
+
+          <h4 class="text-5xl font-bold text-yellow-500 mb-8">
+            $149
+          </h4>
+
+          <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-black py-3 rounded-xl font-semibold">
+            Choose Plan
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-black">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+
+        <h2 class="text-5xl font-bold mb-5">
+          Contact Us
+        </h2>
+
+        <p class="text-gray-400 text-lg">
+          Ready to automate your salon business?
+        </p>
+
+      </div>
+
+      <form class="bg-slate-900 p-10 rounded-3xl border border-slate-800">
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="bg-black border border-slate-700 p-4 rounded-xl outline-none"
+          >
+
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="bg-black border border-slate-700 p-4 rounded-xl outline-none"
+          >
+
+        </div>
+
+        <textarea
+          rows="6"
+          placeholder="Your Message"
+          class="w-full bg-black border border-slate-700 p-4 rounded-xl outline-none mb-6"
+        ></textarea>
+
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-xl font-semibold">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 py-8 text-center border-t border-slate-800">
+
+    <p class="text-gray-500">
+      © 2026 SalonAI. All Rights Reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
